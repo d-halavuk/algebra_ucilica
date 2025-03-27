@@ -1,3 +1,5 @@
+package geometrijski_likovi;
+
 public class Krug {
     private String naziv;
     private double radijus;

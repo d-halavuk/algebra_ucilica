@@ -1,15 +1,18 @@
-public class Pravokutnik {
+package geometrijski_likovi;
+
+public class Trokut {
 
     private String naziv;
     private double stranicaA;
     private double stranicaB;
+    private double stranicaC;
 
 
-
-    public Pravokutnik(String naziv, double straanicaA, double stranicaB){
+    public Trokut(String naziv, double stranicaA, double stranicaB, double stranicaC){
         this.naziv = naziv;
-        this.stranicaA = straanicaA;
+        this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
+        this.stranicaC = stranicaC;
 
 
     }
@@ -36,8 +39,26 @@ public class Pravokutnik {
 
     public void setStranicaB(double stranicaB){
         this.stranicaB = stranicaB;
-
     }
+
+    public double getStranicaC(){
+        return stranicaC;
+    }
+
+    public void setStranicaC(double stranicaC){
+        this.stranicaC= stranicaC;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
