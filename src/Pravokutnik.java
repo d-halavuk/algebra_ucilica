@@ -1,16 +1,15 @@
-public class Trokut {
+public class Pravokutnik {
 
     private String naziv;
     private double stranicaA;
     private double stranicaB;
-    private double stranicaC;
 
 
-    public Trokut(String naziv, double stranicaA, double stranicaB, double stranicaC){
+
+    public Pravokutnik(String naziv, double straanicaA, double stranicaB){
         this.naziv = naziv;
-        this.stranicaA = stranicaA;
+        this.stranicaA = straanicaA;
         this.stranicaB = stranicaB;
-        this.stranicaC = stranicaC;
 
 
     }
@@ -37,26 +36,8 @@ public class Trokut {
 
     public void setStranicaB(double stranicaB){
         this.stranicaB = stranicaB;
+
     }
-
-    public double getStranicaC(){
-        return stranicaC;
-    }
-
-    public void setStranicaC(double stranicaC){
-        this.stranicaC= stranicaC;
-    }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
