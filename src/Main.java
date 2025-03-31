@@ -1,7 +1,3 @@
-import geometrijski_likovi.Trokut;
-import geometrijski_likovi.Krug;
-import geometrijski_likovi.Pravokutnik;
-
 public class Main {
     public static void main(String[] args) {
         Trokut trokut1 = new Trokut("Test trokut", 3.0, 4.0, 5.0);
@@ -28,7 +24,7 @@ public class Main {
 
 
         System.out.println();
-        Trokut trokut3 = new Trokut("geometrijski_likovi.Trokut broj tri", 5.0, 5.0, 5.0);
+        Trokut trokut3 = new Trokut("Trokut broj tri", 5.0, 5.0, 5.0);
         System.out.println("Naziv: " + trokut3.getNaziv());
         System.out.println("Stranice: A=" + trokut3.getStranicaA() +
                 ", B=" + trokut3.getStranicaB() +
