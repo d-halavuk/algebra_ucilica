@@ -1,4 +1,6 @@
 import geometrijski_likovi.Trokut;
+import geometrijski_likovi.Krug;
+import geometrijski_likovi.Pravokutnik;
 
 public class Main {
     public static void main(String[] args) {
