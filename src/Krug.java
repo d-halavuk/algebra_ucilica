@@ -23,7 +23,7 @@ public class Krug extends GeometrijskiLik {
 
     @Override
     public double povrsina() {
-        return (Math.pow(radijus, 2)) * Math.PI;
+        return Math.pow(radijus, 2) * Math.PI;
     }
 
     @Override

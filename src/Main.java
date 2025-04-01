@@ -1,44 +1,25 @@
+import java.util.Collections;
+
 public class Main {
+
     public static void main(String[] args) {
-        Trokut trokut1 = new Trokut("Test trokut", 3.0, 4.0, 5.0);
+        Krug krug1 = new Krug("k1",10);
+        Krug krug2 = new Krug("k2",  5);
 
-        System.out.println("Naziv: " + trokut1.getNaziv());
-        System.out.println("Stranice: A=" + trokut1.getStranicaA() +
-                ", B=" + trokut1.getStranicaB() +
-                ", C=" + trokut1.getStranicaC());
+        Pravokutnik pravokutnik1 = new Pravokutnik("p1",10,5);
+        Pravokutnik pravokutnik2 = new Pravokutnik("p2",3,3);
 
+        Ucilica ucilica = new Ucilica();
 
-        trokut1.setNaziv("Testni trokut - novo ime");
-        trokut1.setStranicaA(6.0);
-        System.out.println("Novi naziv: " + trokut1.getNaziv());
-        System.out.println("Nova vrijednost stranice A: " + trokut1.getStranicaA());
+        ucilica.getLikovi().add(krug1);
+        ucilica.getLikovi().add(krug2);
+        ucilica.getLikovi().add(pravokutnik1);
+        ucilica.getLikovi().add(pravokutnik2);
 
+        Collections.sort(ucilica.getLikovi());
 
-        System.out.println();
-        Trokut trokut2 = new Trokut("Drugi trokut", 2.5, 2.5, 3.0);
-        System.out.println("Naziv: " + trokut2.getNaziv());
-        System.out.println("Stranice: A=" + trokut2.getStranicaA() +
-                ", B=" + trokut2.getStranicaB() +
-                ", C=" + trokut2.getStranicaC());
-
-
-
-        System.out.println();
-        Trokut trokut3 = new Trokut("Trokut broj tri", 5.0, 5.0, 5.0);
-        System.out.println("Naziv: " + trokut3.getNaziv());
-        System.out.println("Stranice: A=" + trokut3.getStranicaA() +
-                ", B=" + trokut3.getStranicaB() +
-                ", C=" + trokut3.getStranicaC());
-
-
-
-
-        trokut3.setStranicaA(7.0);
-        trokut3.setStranicaB(8.0);
-        trokut3.setStranicaC(9.0);
-        System.out.println("Trokut3 nakon izmjena:");
-        System.out.println("A=" + trokut3.getStranicaA() +
-                ", B=" + trokut3.getStranicaB() +
-                ", C=" + trokut3.getStranicaC());
+        for(GeometrijskiLik lik : ucilica.getLikovi()) {
+            System.out.println(lik.toString());
+        }
     }
 }
